@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Segoe UI'; */
+}
+/* @font-face {
+    font-family: 'Segoe UI';
+    src: local('Segoe UI'), url('segoeui.woff') format('woff');
+} */
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+/*------------- Header--------------------*/
+.sidebar {
+    width: 279.8px;
+    height: 700px;
+    background-color: #e5e5e5;
+    top: 0;
+    left: 0;
+}
+.sidebar ul li.listItem:hover {
+    background-color: #d1d1d1;
+}
+/* .sidebar ul li.listItem div.active {
+    display: block;
+    position: static;
+    width: 100%;
+} */
+div.sidebar div.dropdown-container { 
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+div.sidebar div.dropdown-container.active {
+    display: block;
+}
+/*--------------- Sidebar ------------------- */
+.mainButton { 
+    width: 100%;
+    cursor: pointer;
+}
+.mainButton i { 
+    padding: 15px;
+    font-size: 19px;
+}
+.mainButton:hover {
+    background-color: #d1d1d1
+}
+
+.listButton {
+    width: 100%;
+}
+.listButton ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.listButton ul.list li.listItem {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+}
+.listButton ul li a {
+    text-decoration: none;
+    color: black;
+}
+.textList {
+    display: inline-block;
+}
+/* .listButton ul li:hover { 
+    background-color: #d1d1d1;
+    cursor: pointer;
+} */
+/* .listButton ul li.dropdown:hover { 
+    background-color: #d1d1d1;
+    cursor: pointer;
+} */
+/* .dropdown-content li:hover {
+    background-color: #d1d1d1;
+    cursor: pointer;
+} */
+.leftIcon {
+    font-size: 15px;
+    margin: 5px 10px 5px 8px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    padding: 5px 0px 5px 13px;
+    
+}
+.active .leftIcon {
+    border-left: 1.25px solid rgb(0, 120, 212);
+}
+.rightIcon {
+    float: right;
+    padding-right: 20px;
+}
+.divide-sidebar { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dropdown-container ul {
+    width: 100%;
+}
+.dropdown-container ul li {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    background: #e5e5e5;
+}
+.dropdown-container ul li {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    background: #e5e5e5;
+}
+.dropdown-container.active ul li:hover {
+    background-color: #d1d1d1;
+}
+
+.dropdown div.hoverItem {
+    background-color: #d1d1d1;
+}
+.dropdown-container ul li.active {
+    padding-left: 36px;
+}
+.dropdown-container ul li a {
+    padding-left: 10px;
+}
+.dropdown-container ul li.active a {
+    border-left: 2px solid rgb(0, 120, 212);
+}
+.dropdown-content li a {
+    /* padding-left: 50px; */
+    line-height: 40px;
+}
+.small {
+    width: 4%;
+    position: relative;
+}
+.small span.textList {
+    display: none;
+}
+.small i.rightIcon {
+    display: none;
+}
+.small li.listItem {
+    position: relative;
+}
+.small li.listItem:hover span.textList {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 100%;
+    background-color: #d1d1d1;
+    width: 400%;
+    padding-left: 20px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.small li.listItem:hover span.textList:hover {
+    background-color:white;
+
+}
+.small li.listItem div.active li:hover {
+    background-color: lightblue;
+}
+/* .small div.dropdown-container.active {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    width: 430%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+.small .listItem.dropdown:hover ~ div.dropdown-container:first-of-type {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    width: 431%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*----------------- Small Sidebar -------------------*/

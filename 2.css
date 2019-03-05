@@ -1,0 +1,934 @@
+/* ------------------------CSS phan dat maukhau------------------------ */
+
+
+.maunennhat {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255,255,255,.65);
+    z-index: 3;
+}
+
+.khungxam-chudo {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 0 25px;
+    font-weight: 500;
+}
+
+p.khungxam-chu {
+    padding: 15px;
+}
+
+i.ms-Icon.ms-Icon--Info.khungxam-icon {
+    float: left;
+    clear: both;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #0078D7;
+    font-size: 21px;
+}
+
+input.chinhnhom-timkiem {
+    margin: 0 0 0 25px;
+    width: 478px;
+    height: 31px;
+    border: 1px solid black;
+    padding-left: 8px;
+}
+
+.khungmauxam02 {
+    margin: 0 0 0 49px;
+    width: 500px;
+    height: 80px;
+    background: #CCCCCC;
+}
+
+h2.tucachnhom {
+    margin: 25px 0 11px 25px;
+    color: #737373;
+    font-size: 18px;
+}
+
+.chinhsuanhomnguoidung {
+    width: 850px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 0px;
+    padding: 1px 0px 0px 0px;
+    opacity: 1;
+    overflow-y: scroll;
+    visibility: hidden;
+    background: white;
+    z-index: 5;
+    height: 100%;
+    opacity: 0;
+}
+
+form.formungdung {transform: translateX(-25px);}
+
+.dong002 {
+    width: 500px;
+    margin: 50px 0 0 0;
+    border-top: 1px solid #CCCCCC;
+    padding: 11px 0 0 0;
+}
+
+select.c-select.form-control.otext {
+    width: 180px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0 0 0 9px;
+    border: 1px solid #106EBE;
+    border-radius: 0;
+    margin: 6px 0 0 0;
+}
+
+i.ms-Icon.ms-Icon--ChromeClose.nutclose01 {
+    float: right;
+    position: absolute;
+    right: 6px;
+    top: 4px;
+}
+
+.header-datlai i.ms-Icon.ms-Icon--ChromeClose {position: absolute;z-index: 15;color: white;right: 16px;top: 13px;}
+
+input#ohuybo {
+    width: 120px;
+    height: 30px;
+    background: white;
+    border: 1px solid #0078D7;
+    color: #0078D7;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.formungdung input#ohuybo {
+    background: #CCCCCC;
+    border: none;
+    color: black;
+    font-weight: 400;
+}
+
+input#ohuybo:hover {
+    background: #106EBE;
+    color: white;
+    border: 1px solid black;
+}
+
+input#odatlai {
+    margin: 50px 10px 0 25px;
+    background: #106EBE;
+    width: 120px;
+    border: none;
+    height: 30px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.chinhsuanhomnguoidung .themthanhvien1#odatlai {
+    width: 161px;
+    height: 32px;
+    margin: 10px 0 0 26px!important;
+    padding: 0px;
+    display: block;
+    background: white;
+    border: 1px solid #1664A7;
+    color: #1664A7;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.chinhsuanhomnguoidung .themthanhvien1#odatlai:hover {
+    background: #1664A7;
+    color: white;
+}
+
+input#odatlai:hover {
+    background: #106EBE;
+    border: 1px solid black;
+}
+
+p.chucheckbox {
+    display: inline-block;
+    color: black;
+    width: 500px;
+    padding-top: 8px;
+    transform: translateY(10px);
+}
+
+p.chucheckboxden {
+    display: inline;
+    font-size: 15px;
+    color: #505050;
+    line-height: 18px;
+}
+
+input.ochekbox {
+    display: inline-block;
+    margin: 20px 20px 0 25px;
+    transform: scale(1.5);
+}
+
+.top-contentdatlai .right-top-datlai {
+    width: 230px;
+    color: #505050;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 13px 0 0 0;
+}
+
+.top-contentdatlai .left-top-datlai {
+    padding: 12px 0 0 0px;
+    color: #0078d7;
+    display: block;
+    width: 230px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.top-contentdatlai:hover {
+    background: #F1F1F1;
+}
+
+.top-contentdatlai {
+    display: flex;
+    margin-left: 25px;
+    border-bottom: 1px solid #D2D2D2;
+    width: 500px;
+    padding-bottom: 5px;
+}
+
+.header-datlai {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+.header-datlai h2 {
+    height: 88px;
+    background: #505050;
+    padding: 39px 0 0 25px;
+    font-size: 36px;
+    color: white;
+    font-weight: 300;
+    float: left;
+    position: absolute;
+    width: 100%;
+}
+
+.nguoidungmoi10 .header-datlai h2 {
+    padding-left: 110px;
+    font-weight: 350;
+}
+
+.datlaimatkhau, .nguoidungmoi10, .dongbohoathumuc01, .xoanguoidung-01 {
+    width: 850px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 0px;
+    padding: 1px 0px 0px 0px;
+    opacity: 1;
+    overflow-y: scroll;
+    visibility: hidden;
+    background: white;
+    z-index: 5;
+    height: 100%;
+    opacity: 0;
+}
+/* ------------------------END CSS phan dat maukhau------------------------ */
+/* ------------------------2 o duoi man hinh------------------------------ */
+
+
+.khungbenphai10 p {
+    font-size: 12px;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.khungbenphai10 {
+    width: 135px;
+    height: 40px;
+    background: #505050;    
+    text-align: center;
+    box-shadow: rgb(67, 59, 59) 4px -1px 17px 0px;
+}
+
+.khungbentrai10 p {
+    color: white;
+    font-size: 12px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.khungbentrai10 {
+    width: 135px;
+    height: 40px;
+    background: #008b94;
+    text-align: center;
+}
+
+.haioduoimanhinh {
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    z-index: 15;
+}
+/* ------------------------END 2 o duoi man hinh------------------------------ */
+/* -------------------------------CSS cho form nguoidung--------------------- */
+
+
+select.c-select.form-control.otext.otextdai00 {
+    width: 481px;
+}
+
+.fomnguoidung p.chumauden1 {
+    margin: 25px 0 12px 0;
+}
+
+select.c-select.form-control.otext.otextngan {
+    float: right;
+    width: 230px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+.fomnguoidung span.chuacong {
+    margin-left: -12px;
+    width: 0px;
+}
+
+
+p.chumauxam1.tenhienthi {
+    width: 250px;
+    float: left;
+}
+
+.fomnguoidung input.otextdai01 {
+    width: 478px;
+    margin: 7px 0 0 0;
+}
+
+input.tennguoidung10 {
+    width: 230px;
+    margin: 6px 15px 0 0;
+}
+
+p.chumauxam1.ho11 {
+    width: 230px;
+    float: left;
+}
+
+p.chumauxam1.ten11 {
+    float: left;
+    width: 250px;
+}
+
+form.fomnguoidung {
+    margin: 0 0 0 25px;
+    width: 500px;
+}
+
+.anhnguoidungmoi {
+    color: white;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    background: #737373;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    font-size: 28px;
+    border: 1.5px solid white;
+    margin: 20px 0 0 20px;
+    box-sizing: border-box;
+}
+/* -------------------------------END CSS cho form nguoidung--------------------- */
+/* ---------------------------CSS xuat nguoi dung ------------------------- */
+
+
+.xuatnguoidunghienhoat input#odatlai {
+    margin: 28px 0 0px 114px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    font-weight: 400;
+}
+
+.xuatnguoidunghienhoat input#ohuybo {
+    width: 100px;
+    height: 32px;
+    background: #F4F4F4;
+    border: none;
+    color: black;
+    font-weight: 400;
+}
+
+.xuatnguoidunghienhoat input#ohuybo:hover {
+    background: #EAEAEA;
+}
+
+.xuatnguoidunghienhoat p.chumauden1 {
+    font-size: 12px;
+    font-weight: 440;
+    margin: 0px 0px 0px 26px;
+    padding-top: 8px;
+    color: rgb(51, 51, 51);
+    width: 295px;
+}
+
+.xuatnguoidunghienhoat h2 {
+    color: rgb(51, 51, 51);
+    margin: 0px;
+    padding: 22px 36px 20px 28px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.xuatnguoidunghienhoat {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    width: 340px;
+    height: 184px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 0px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+}
+/* ---------------------------END CSS xuat nguoi dung ------------------------- */
+/* ------------------------CSS phan dong bo hoa thu muc----------------------- */
+
+
+.xoanguoidung-01 h2 {
+    padding: 36px 0 0 90px;
+}
+
+.anhthungrac01 i.ms-Icon.ms-Icon--RecycleBin {
+    color: white;
+    z-index: 10;
+    position: relative;
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    margin: 0 0 0 25px;
+}
+
+.dongbohoathumuc01 .header-datlai h2 {
+    font-weight: 400;
+}
+
+.content-dongbohoa input#odatlai {
+    margin: 70px 0 100px 25px;
+}
+
+a.chuxanh-dongbohoa {
+    font-size: 15px;
+    line-height: 20px;
+    color: #337ab7;
+    margin: 0px 0 0 25px;
+    display: block;
+}
+
+p.chuxam-dongbohoa {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    width: 500px;
+    margin: 0 0 15px 25px;
+}
+
+.dongbohoathumuc01 h4 {
+    color: #737373;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 15px 0 22px 25px;
+}
+
+/* ------------------------ END  CSS phan dong bo hoa thu muc----------------------- */
+/* ------------------------CSS 2 o duoi man hinh---------------------------------- */
+
+
+.ndduoimanhinh02 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ndduoimanhinh02 a.chumauxanh1 {
+    display: block;
+    margin: 100px 0 0 24px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.ndduoimanhinh02 p.chumauxam1 {
+    display: block;
+    clear: both;
+    float: left;
+    margin: 22px 2px 0 25px;
+    color: black;
+    width: 500px;
+}
+
+.ndduoimanhinh02 i.ms-Icon.ms-Icon--Search {
+    transform: translateX(-31px);
+}
+
+.ndduoimanhinh02 input {
+    width: 400px;
+    margin: 0 0 0 25px;
+    border: 1px solid black;
+    height: 33px;
+}
+
+
+.ndduoimanhinh02 .chumauxam1 {
+    float: right;
+    margin: 17px 28px 0 0;
+}
+
+.ndduoimanhinh02 h3 {
+    margin: 10px 0 15px 25px;
+    float: left;
+    width: 300px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.noidung-duoimanhinh .chumauxanh1 {
+    margin: 50px 0 100px 25px;
+}
+
+.noidung-duoimanhinh {
+    overflow-y: scroll;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.xemgiaiphap01 i.ms-Icon.ms-Icon--ReminderPerson.iconbentrai11 {
+    padding: 0 11px 0 25px;
+    color: #999898;
+    font-size: 18px;
+    position: relative;
+}
+
+.xemgiaiphap01 p {
+    color: #999898;
+    font-size: 15px;
+}
+
+i.ms-Icon.ms-Icon--ChevronDown.iconbenphai11 {
+    position: absolute;
+    right: 39px;
+}
+
+.xemgiaiphap01 i.ms-Icon.ms-Icon--Lightbulb.iconbentrai11 {
+    padding: 0 11px 0 25px;
+    color: #999898;
+    font-size: 18px;
+    position: relative;
+}
+
+.noidung-duoimanhinh .xemgiaiphap01 {
+    height: 60px;
+    display: flex;
+    line-height: 60px;
+    background: #dedddd;
+    border-bottom: 1px solid white;
+}
+
+input#odatlai.nhantrogup {
+    margin: 10px 0 24px 25px;
+    border: none;
+}
+
+p.chumauxam1.chubenphai11 {
+    float: right;
+    width: 100px;
+    margin-right: 30px;
+    height: 25px;
+}
+
+p.chumauxam1.chubentrai11 {
+    color: black;
+    float: left;
+    margin: 10px 0 0 25px;
+    width: 300px;
+    height: 20px;
+    display: block;
+}
+
+input.otext-ndduoimh {
+    width: 440px;
+    height: 70px;
+    margin: 0 0 0 25px;
+}
+
+.noidung-duoimanhinh h3 {
+    font-size: 24px;
+    margin: 16px 0 16px 25px;
+    font-weight: 400;
+}
+
+.thanhtd-icon3 i.ms-Icon.ms-Icon--ChromeClose {margin-top: 5px;}
+
+.thanhtd-icon3 {width: 50px;height: 50px;text-align: center;display: block;position: absolute;right: 0;}
+
+.thanhtd-icon2 i.ms-Icon.ms-Icon--History {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.thanhtd-icon2 {
+    width: 50px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.thanhtd-icon1 i.ms-Icon.ms-Icon--JoinOnlineMeeting {
+    color: red;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.thanhtd-icon1 {
+    width: 50px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    background: #f1f1f2;
+}
+
+.thanhtdduoimanhinh {
+    height: 40px;
+    background: #d1d3d4;
+    display: flex;
+    position: relative;
+}
+
+.khungduoimanhinh {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    width: 500px;
+    height: 100%;
+    background: white;
+    border: 1px solid #d1d3d4;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 15;
+}
+/* ------------------------END CSS 2 o duoi man hinh---------------------------------- */
+/* ----------------------CSS phan hoi duoi man hinh--------------------------------- */
+
+
+input.gui-binhchon {
+    width: 80px;
+    height: 30px;
+    background: #f4f4f4;
+    border: none;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 25px 0 100px 0;
+}
+
+.phanhoiduoimanhinh p.chumauxanh1 {
+    margin: 30px 0 0px 15px;
+    float: left;
+    width: 200px;
+}
+
+.khungduoi-binhchon02 {
+    background: #e3e3e3;
+    margin: 0 0 0 15px;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 12px;
+    font-size: 14px;
+}
+
+p.cothelienhe {
+    display: inline-block;
+    font-size: 12px;
+    color: black;
+}
+
+input.ocheckbox-binhchon {
+    margin: 12px 0 0 19px;
+    border: 1px solid black;
+    background: white;
+    display: inline-block;
+}
+
+input.oinput-binhchon {
+    width: 276px;
+    height: 100px;
+    margin: 0 0 0 18px;
+    display: block;
+}
+
+.phanhoiduoimanhinh img {
+    width: 170px;
+    height: 39px;
+    margin: 0 0 40px 30px;
+}
+
+p.chumauxam1.caithienp11 {
+    font-size: 13px;
+    color: black;
+    margin: 22px 0 11px 15px;
+    width: 300px;
+}
+
+.giupcaithien {
+    font-size: 15px;
+    color: black;
+    margin: 14px 0px 0px 14px;
+    font-weight: 450;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 13px;
+    width: 275px;
+}
+
+.tieudephanhoi i.ms-Icon.ms-Icon--ChromeClose {
+    position: absolute;
+    right: 16px;
+}
+
+.tieudephanhoi {
+    height: 44px;
+    background: #505050;
+    color: white;
+    line-height: 44px;
+    font-weight: 500;
+    padding: 0 0 0 13px;
+    font-size: 15px;
+    display: flex;
+    border: 0.5px solid white;
+}
+
+.phanhoiduoimanhinh {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    height: 470px;
+    width: 320px;
+    right: 0;
+    box-shadow: 0 0 10px 0 #000;
+    z-index: 15;
+}
+/* ----------------------END CSS phan hoi duoi man hinh--------------------------------- */
+/* -----------------------CSS quan li ten nguoi dung01 ------------------------------ */
+
+
+.qltnd-oduoi {
+    margin: 0 0 0 40px;
+}
+
+.qltnd-ogiua {
+    width: 100%;
+    height: 70px;
+}
+
+.quanlytennguoidung01 input.tennguoidung10 {
+    float: left;
+    margin: 0 0 0 40px;
+    width: 178px;
+    height: 30.4px;
+}
+
+.quanlytennguoidung01 span.chuacong {
+    float: left;
+    margin: 0 5px;
+}
+
+.quanlytennguoidung01 select.c-select.form-control.otext.otextngan {float: left;width: 178px;margin: 0 0 0 0;height: 30.4px;}
+
+i.ms-Icon.ms-Icon--Info.qltnd-info {
+    line-height: 64px;
+    margin: 0 9px 0 16px;
+}
+
+.qltnd-khungxam p.chumauxam1 {display: inline-block;color: black;width: 450px;margin: 14px 0 0 0;}
+
+.qltnd-khungxam {
+    margin: 27px 40px 40px 40px;
+    background: #efefef;
+    height: 64px;
+}
+
+.quanlytennguoidung01 h3 {
+    color: rgb(51, 51, 51);
+    padding-bottom: 25px;
+    font-weight: bold;
+    line-height: 31px;
+    font-size: 28px;
+    padding: 20px 0 0 40px;
+}
+
+.header-qltnd i.ms-Icon.ms-Icon--ChromeClose.qltnd-iconphai {
+    width: 24px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    padding: 0 0px 0 10px;
+    margin: 0 9px 0px 0;
+    float: right;
+}
+
+.header-qltnd i.ms-Icon.ms-Icon--Back.qltnd-icontrai {
+    width: 24px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    padding: 0 0px 0 10px;
+    margin: 0 5px 0 0;
+}
+
+.quanlytennguoidung01 {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 643px;
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px 0px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden auto;
+    z-index: 10;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+/* ----------------------- END CSS quan li ten nguoi dung01 ------------------------------ */
+/* ----------------------------CSS cho menu top list--------------------------------- */
+.tdt-menu12 i.ms-Icon.ms-Icon--AlignLeft {
+    margin: -1px 14px 0 23px;
+}
+
+.tdt-menu12 i.ms-Icon.ms-Icon--NumberedList {
+    margin: 0 16px 0 0;
+}
+
+.tdt-menu12 i.ms-Icon.ms-Icon--Accept {
+    margin: 0 5px 0 0px;
+}
+
+.tdt-menu12 li {
+    margin: 0 0 0 0px;
+    height: 32px;
+    line-height: 26px;
+}
+
+.tdt-menu12 li:hover {
+    background: #eaeaea;
+}
+
+ul.tdt-menu12 {
+    position: absolute;
+    width: 183px;
+    height: 64px;
+    list-style: none;
+    right: 0;
+    z-index: 5;
+    background: white;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 0px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+/* ----------------------------END CSS cho menu top list--------------------------------- */
+/* --------------------------CSS bo loc thanh tieu de-------------------------------- */
+
+.menuboloc-tren01 li:hover,.menuboloc-duoi01 li:hover {
+    background: #eaeaea;
+}
+
+ul.menuboloc-duoi01 {
+    list-style: none;
+}
+
+.menuboloc-duoi01 li {
+    padding: 0 5px 0 24px;
+}
+
+.menuboloc-duoi01 li#boloc-thanh1 {
+    padding: 0 0 0 0;
+}
+
+.menuboloc-duoi01 li#boloc-thanh1 i {
+    margin: 0 5px;
+}
+
+.menuboloctdt p.chumauxanh1 {
+    font-weight: 500;
+    margin: -11px 0 2px 6px;
+}
+
+.menuboloc-tren01 i.ms-Icon {
+    color: rgb(0, 120, 212);
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.menuboloctdt {
+    position: absolute;
+    list-style: none;
+    width: 275px;
+    height: 500px;
+    overflow: hidden auto;
+    background: white;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(234, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 0px;
+    right: 125px;
+    z-index: 16;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.menuboloctdt {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+ul.menuboloc-tren01 {list-style: none;}
+/* --------------------------CSS bo loc thanh tieu de-------------------------------- */
