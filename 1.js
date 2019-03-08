@@ -1,20 +1,33 @@
 ﻿$(function () {
+    var dem_checked = 0;
+    var $dem = 0;
+    var $souser = $('.noidungbanguser').length;
     $('.boicon1').click(function (e) {
         $(this).children('.khungbenngoai').toggleClass('doimau');
         $(this).children('.icontrong').toggleClass('mautrang1');
         $(this).children().toggleClass('hienlen');
-        $('.leftoptionUser2').toggleClass('andi');
-        $('.leftoptionUser1').toggleClass('hienlen');
         $(this).parent().parent().toggleClass('backgroundxamdam');
+        $(this).parent().parent().toggleClass('nutcheck-checked');
+        $dem_checked = $('.nutcheck-checked').length;
+        if (($dem_checked < $souser)) {
+            $('.iconchung1').children('.khungbenngoai').removeClass('doimau');
+            $('.iconchung1').children('.icontrong').removeClass('mautrang1');
+        }
+        if (($dem_checked == $souser)) {
+            $('.iconchung1').children('.khungbenngoai').addClass('doimau');
+            $('.iconchung1').children('.icontrong').addClass('mautrang1');
+        }
+        checkSelected();
     });
-    $dem = 0;
     $('.iconchung1').click(function (e) {
-        $dem = $dem + 1;
-        if ($dem % 2 == 0) {
+        $dem_checked = $('.nutcheck-checked').length;
+        console.log($dem_checked);
+        if ($dem_checked == $souser) {
             $('.boicon1').children('.khungbenngoai').removeClass('doimau');
             $('.boicon1').children('.icontrong').removeClass('mautrang1');
             $('.noidungbanguser').removeClass('backgroundxamdam');
             $('.boicon1').children().removeClass('hienlen');
+            $(this).parents('.thanhtieude').parent().next().children().removeClass('nutcheck-checked');
         }
         else {
             $('.boicon1').children('.khungbenngoai').removeClass('doimau');
@@ -28,17 +41,29 @@
 
             $('.boicon1').children().removeClass('hienlen');
             $('.boicon1').children().addClass('hienlen');
+            $(this).parents('.thanhtieude').parent().next().children().addClass('nutcheck-checked');
         }
         $(this).children('.khungbenngoai').toggleClass('doimau');
         $(this).children('.icontrong').toggleClass('mautrang1');
         $(this).children().toggleClass('hienlen');
-        // $('.leftoptionUser2').toggleClass('andi');
-        // $('.leftoptionUser1').toggleClass('hienlen');
+        checkSelected();
     });
-    // phan kich noidungbanguser
-    // $('.cot2_noidung').click(function (e) { 
-    //     $('.rightmaincontent').toggleClass('hienlen');   
-    // });
+    function checkSelected() {
+        $dem_checked = $('.nutcheck-checked').length;
+        console.log($dem_checked);
+        if ($dem_checked==0) {
+            $('.leftoptionUser2').removeClass('andi');
+            $('.leftoptionUser2').addClass('hienlen');
+            $('.leftoptionUser1').removeClass('hienlen');
+            $('.leftoptionUser1').addClass('andi');
+        }
+        else {
+            $('.leftoptionUser2').removeClass('hienlen');
+            $('.leftoptionUser2').addClass('andi'); 
+            $('.leftoptionUser1').removeClass('andi');
+            $('.leftoptionUser1').addClass('hienlen');
+        }
+    }
     $('.cot3_noidung').click(function (e) {
         $('.rightmaincontent').toggleClass('hienlen');
         $(this).parent().toggleClass('backgroundxamdam');
@@ -163,14 +188,18 @@
         $('.xoanguoidung-01').addClass('hienlen');
     });
     $('.tdt-listtop01').click(function (e) {
+        e.stopPropagation();
         $('.tdt-menu12').toggleClass('hienlen');
+        $('.tdt-menu12').addClass('open');
     });
     $('.tdt-chinhsuatennd').click(function (e) {
         $('.maunennhat').removeClass('andi');
         $('.quanlytennguoidung01').addClass('hienlen');
     });
     $('.filter.adduser').click(function (e) {
+        e.stopPropagation();
         $('.menuboloctdt').toggleClass('hienlen');
+        $('.menuboloctdt').addClass('open');
     });
     $('.xoanguoidung-ohuybo').click(function (e) {
         $('.maunennhat').addClass('andi');
@@ -226,7 +255,7 @@
         $('.chinhsuanhomnguoidung').removeClass('hienlen');
         $('.maunennhat').addClass('andi');
     });
-    $(window).click(function(e) {
-        $('*').removeClass('hienlen');
+    $(window).click(function(){
+        $('.open').removeClass('hienlen')   ;
     });
 })
