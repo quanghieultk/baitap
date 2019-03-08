@@ -226,4 +226,7 @@
         $('.chinhsuanhomnguoidung').removeClass('hienlen');
         $('.maunennhat').addClass('andi');
     });
+    $(window).click(function(e) {
+        $('*').removeClass('hienlen');
+    });
 })
