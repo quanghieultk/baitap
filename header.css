@@ -53,9 +53,6 @@
     top: 0px;
     left: 0px;
     background-color: white;
-    border: 1px solid gray;
-    border-top-width: 0px;
-    border-left-width: 0px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s linear;
@@ -675,7 +672,6 @@
     top: 0px;
     left: 0px;
     background-color: white;
-    border: 1px solid gray;
     width: 320px;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

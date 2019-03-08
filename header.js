@@ -72,4 +72,22 @@ document.addEventListener("DOMContentLoaded", function(){
     iconForward.onclick = function(){
         contentAllApps.classList.toggle('hienra');
     }
+    var iconAllApps = document.getElementById('icon-all-apps');
+    iconAllApps.onclick = function(){
+        contentLeftButton.classList.remove('hienra');
+        contentAllApps.classList.remove('hienra');
+    }
+    var linkBack = document.getElementById('link-back');
+    linkBack.onclick = function(){
+        contentAllApps.classList.remove('hienra');
+    }
+    var chromeClose = document.getElementsByClassName('ms-Icon--ChromeClose');
+    var ndRight = document.getElementsByClassName('content-right-button');
+    for (let i = 0; i < chromeClose.length; i++) {
+        chromeClose[i].onclick = function(){
+            for (let j = 0; j < ndRight.length; j++) {
+                ndRight[j].classList.remove('hienra');             
+            }
+        }  
+    }
 })
